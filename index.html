@@ -7,19 +7,78 @@
     <title>HTML tags form - u Antona doma</title>
 </head>
 <body>
-    <form action="#" method="GET">
+    <form action="#" method="POST" enctype="multipart/form-data"  >
         <div> 
-            <p>Имя</p>
+            <p>name</p>
             <input placeholder="Anton" name="username" type="text"/>
         </div>
         <div> 
-            <p>Пароль</p>
-            <input placeholder="Anton" name="username" type="password"/>
+            <p>password</p>
+            <input tabindex="2" name="userpass" type="password"/>
         </div>
         <div> 
-            <p>Телефон</p>
-            <input placeholder="Anton" name="username" type="password"/>
+            <p>phone number</p>
+            <input tabindex="3" name="userphone" type="tel"/>
         </div>
+        <div>
+            <p>gender</p>
+            <input tabindex="4" checked type="radio" name="gender" value="male"/> Man
+        </div>
+        <div>
+            <input tabindex="4" type="radio" name="gender" value="female"/> Woman
+        </div>
+        <div>
+            <input tabindex="4" type="radio" name="gender" value="other"/> other
+        </div>
+        <div> 
+            <p>enter your gender</p>
+            <input tabindex="5" placeholder="" name="username" type="text"/>
+        </div>
+        <div>
+            <p> Drink </p>
+        </div>
+            <div>
+                <input tabindex="6" disabled type="checkbox" name="Vodka" value="yes"/> Vodka
+            </div> 
+            <div>
+                <input tabindex="7" type="checkbox" name="Jin" value="yes"/> jin
+            </div>  
+            <div>
+                <input tabindex="8" type="checkbox" name="wiski" value="yes"/> wiski
+            </div>  
+            <div>
+                <input tabindex="9" checked type="checkbox" name="rom" value="yes"/> rom
+            </div>    
+       
+            <div>
+                <p> information dopolniteon </p>
+            </div>
+            <div>
+                <textarea tabindex="10" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <p>Photo</p>
+            </div>
+            <div>
+                <input tabindex="11" tabindex="3" name="userphoto" type="file"/>
+            </div>
+            <div>
+                <p> question </p>
+            </div>
+            <div>
+                <select tabindex="12" name="question">
+                    <option value="who i am?"> Who i am? </option>
+                    <option value="xto ya?"> xto ya? </option>
+                    <option value="42"> 42 </option>
+                </select>
+            </div>
+            <div>
+                <p> doing </p>
+            </div>
+            <div>
+                <button tabindex="13" type="submit"> send </button>
+                <button tabindex="14" type="reset"> reset</button>
+            </div>
     </form>    
 </body>
 </html>
